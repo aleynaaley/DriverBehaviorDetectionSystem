@@ -1,0 +1,29 @@
+{
+  "face_folder": "face5",
+  "face_number": 5,
+  "original_video": "gA_5_s5_2019-03-13T09;06;49+01;00_rgb_face.mp4",
+  "annotation_json": "gA_5_s5_2019-03-13T09;06;49+01;00_rgb_ann_drowsiness.json",
+  "fps": 29.76,
+  "video_duration_sec": 177.65457,
+  "calibration": {
+    "start_sec": 5,
+    "end_sec": 10,
+    "start_frame": 149,
+    "end_frame": 298,
+    "output_file": "calibration_5.mp4"
+  },
+  "safe": {
+    "start_sec": 0,
+    "end_sec": 24,
+    "start_frame": 0,
+    "end_frame": 714,
+    "output_file": "safe_5.mp4"
+  },
+  "drowsy": {
+    "start_sec": 24,
+    "end_sec": 177.65457,
+    "start_frame": 714,
+    "end_frame": 5287,
+    "output_file": "drowsy_5.mp4"
+  }
+}

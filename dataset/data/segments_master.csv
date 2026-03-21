@@ -1,0 +1,14 @@
+face_folder,face_number,original_video,annotation_json,fps,video_duration_sec,calib_start_sec,calib_end_sec,safe_start_sec,safe_end_sec,drowsy_start_sec,drowsy_end_sec,calibration_file,safe_file,drowsy_file
+face1,1,gA_1_s5_2019-03-14T14;26;17+01;00_rgb_face.mp4,gA_1_s5_2019-03-14T14;26;17+01;00_rgb_ann_drowsiness.json,29.7600,184.14,1,6,0,30,30,184.14,calibration_1.mp4,safe_1.mp4,drowsy_1.mp4
+face11,11,gC_11_s5_2019-03-12T09;08;15+01;00_rgb_face.mp4,gC_11_s5_2019-03-12T09;08;15+01;00_rgb_ann_drowsiness.json,29.7600,177.89,12,17,0,41,41,177.89,calibration_11.mp4,safe_11.mp4,drowsy_11.mp4
+face12,12,gC_12_s5_2019-03-14T09;56;52+01;00_rgb_face.mp4,gC_12_s5_2019-03-14T09;56;52+01;00_rgb_ann_drowsiness.json,29.7600,185.28,3,8,0,40,40,185.28,calibration_12.mp4,safe_12.mp4,drowsy_12.mp4
+face13,13,gC_13_s5_2019-03-12T10;03;00+01;00_rgb_face.mp4,gC_13_s5_2019-03-12T10;03;00+01;00_rgb_ann_drowsiness.json,29.7600,180.78,17,22,0,43,43,180.78,calibration_13.mp4,safe_13.mp4,drowsy_13.mp4
+face14,14,gC_14_s5_2019-03-12T09;18;58+01;00_rgb_face.mp4,gC_14_s5_2019-03-12T09;18;58+01;00_rgb_ann_drowsiness.json,29.7600,187.37,6,11,0,40,40,187.37,calibration_14.mp4,safe_14.mp4,drowsy_14.mp4
+face15,15,gC_15_s5_2019-03-12T11;03;23+01;00_rgb_face.mp4,gC_15_s5_2019-03-12T11;03;23+01;00_rgb_ann_drowsiness.json,29.7600,180.68,10,15,0,48,48,180.68,calibration_15.mp4,safe_15.mp4,drowsy_15.mp4
+face2,2,gA_2_s5_2019-03-13T09;19;23+01;00_rgb_face.mp4,gA_2_s5_2019-03-13T09;19;23+01;00_rgb_ann_drowsiness.json,29.7600,181.99,1,6,0,33,33,181.99,calibration_2.mp4,safe_2.mp4,drowsy_2.mp4
+face3,3,gA_3_s5_2019-03-13T09;36;25+01;00_rgb_face.mp4,gA_3_s5_2019-03-13T09;36;25+01;00_rgb_ann_drowsiness.json,29.7600,185.72,1,6,0,30,30,185.72,calibration_3.mp4,safe_3.mp4,drowsy_3.mp4
+face4,4,gA_4_s5_2019-03-13T10;56;52+01;00_rgb_face.mp4,gA_4_s5_2019-03-13T10;56;52+01;00_rgb_ann_drowsiness.json,29.7600,175.71,4,9,0,30,30,175.71,calibration_4.mp4,safe_4.mp4,drowsy_4.mp4
+face5,5,gA_5_s5_2019-03-13T09;06;49+01;00_rgb_face.mp4,gA_5_s5_2019-03-13T09;06;49+01;00_rgb_ann_drowsiness.json,29.7600,177.65,5,10,0,24,24,177.65,calibration_5.mp4,safe_5.mp4,drowsy_5.mp4
+face6,6,gB_6_s5_2019-03-13T13;37;11+01;00_rgb_face.mp4,gB_6_s5_2019-03-13T13;37;11+01;00_rgb_ann_drowsiness.json,29.7600,181.79,4,9,0,46,46,181.79,calibration_6.mp4,safe_6.mp4,drowsy_6.mp4
+face7,7,gB_7_s5_2019-03-13T13;55;52+01;00_rgb_face.mp4,gB_7_s5_2019-03-13T13;55;52+01;00_rgb_ann_drowsiness.json,29.7600,181.62,5,10,0,24,24,181.62,calibration_7.mp4,safe_7.mp4,drowsy_7.mp4
+face9,9,gB_9_s5_2019-03-07T16;31;48+01;00_rgb_face.mp4,gB_9_s5_2019-03-07T16;31;48+01;00_rgb_ann_drowsiness.json,29.7600,177.82,6,11,0,30,30,177.82,calibration_9.mp4,safe_9.mp4,drowsy_9.mp4
