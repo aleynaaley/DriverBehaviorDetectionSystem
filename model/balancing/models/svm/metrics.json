@@ -1,0 +1,30 @@
+{
+  "model": "SVC",
+  "kernel": "rbf",
+  "train_strategy": "balanced_undersampling",
+  "random_state": 42,
+  "n_features": 51,
+  "train_shape": [
+    18302,
+    58
+  ],
+  "test_shape": [
+    21795,
+    58
+  ],
+  "accuracy": 0.7656802018811654,
+  "precision": 0.8605116142311084,
+  "recall": 0.8425264854905573,
+  "f1_score": 0.8514240828557298,
+  "roc_auc": 0.7437523196036382,
+  "confusion_matrix": [
+    [
+      2055,
+      2372
+    ],
+    [
+      2735,
+      14633
+    ]
+  ]
+}

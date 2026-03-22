@@ -1,0 +1,30 @@
+{
+  "model": "SVC",
+  "kernel": "rbf",
+  "class_weight": "balanced",
+  "random_state": 42,
+  "n_features": 51,
+  "train_shape": [
+    48292,
+    58
+  ],
+  "test_shape": [
+    21795,
+    58
+  ],
+  "accuracy": 0.7652672631337463,
+  "precision": 0.8577853054549702,
+  "recall": 0.8456356517733763,
+  "f1_score": 0.8516671498985213,
+  "roc_auc": 0.7453739091815155,
+  "confusion_matrix": [
+    [
+      1992,
+      2435
+    ],
+    [
+      2681,
+      14687
+    ]
+  ]
+}

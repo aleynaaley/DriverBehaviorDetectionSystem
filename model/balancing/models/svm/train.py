@@ -21,12 +21,12 @@ from sklearn.svm import SVC
 # =========================================================
 # AYARLAR
 # =========================================================
-BASE_DIR = Path(__file__).resolve().parent                 # .../class_weight/models/svm
-CLASS_WEIGHT_DIR = BASE_DIR.parent.parent                  # .../class_weight
-SPLITS_DIR = CLASS_WEIGHT_DIR / "splits"
+BASE_DIR = Path(__file__).resolve().parent                 # .../balancing/models/svm
+BALANCING_DIR = BASE_DIR.parent.parent                     # .../balancing
+BALANCED_DATA_DIR = BALANCING_DIR / "data/balanced_data"
 
-TRAIN_CSV = SPLITS_DIR / "train_subject_split.csv"
-TEST_CSV = SPLITS_DIR / "test_subject_split.csv"
+TRAIN_CSV = BALANCED_DATA_DIR / "train_subject_split_balanced.csv"
+TEST_CSV = BALANCED_DATA_DIR / "test_subject_split.csv"
 
 OUTPUT_MODEL = BASE_DIR / "model.pkl"
 OUTPUT_METRICS = BASE_DIR / "metrics.json"
@@ -60,8 +60,8 @@ if not TEST_CSV.exists():
 train_df = pd.read_csv(TRAIN_CSV)
 test_df = pd.read_csv(TEST_CSV)
 
-print("Train shape:", train_df.shape)
-print("Test shape :", test_df.shape)
+print("Balanced train shape:", train_df.shape)
+print("Test shape          :", test_df.shape)
 
 feature_cols = [c for c in train_df.columns if c not in DROP_COLS]
 
@@ -74,8 +74,12 @@ y_test = test_df["label"].copy()
 print("\nFeature sayısı:", len(feature_cols))
 print("İlk birkaç feature:", feature_cols[:10])
 
+print("\nBalanced train label dağılımı:")
+print(y_train.value_counts())
+
 # =========================================================
 # MODEL
+# Balanced train kullandığımız için ekstra class_weight vermiyoruz
 # =========================================================
 model = Pipeline([
     ("scaler", StandardScaler()),
@@ -83,7 +87,6 @@ model = Pipeline([
         kernel="rbf",
         C=1.0,
         gamma="scale",
-        class_weight="balanced",
         probability=True,
         random_state=RANDOM_STATE,
     ))
@@ -113,7 +116,7 @@ report = classification_report(y_test, y_pred, digits=4)
 metrics = {
     "model": "SVC",
     "kernel": "rbf",
-    "class_weight": "balanced",
+    "train_strategy": "balanced_undersampling",
     "random_state": RANDOM_STATE,
     "n_features": len(feature_cols),
     "train_shape": list(train_df.shape),
@@ -139,7 +142,7 @@ with open(OUTPUT_REPORT, "w", encoding="utf-8") as f:
 
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["safe", "drowsy"])
 disp.plot(cmap="Blues")
-plt.title("SVM - Confusion Matrix")
+plt.title("SVM - Confusion Matrix (Balanced Train)")
 plt.tight_layout()
 plt.savefig(OUTPUT_CM, dpi=200)
 plt.close()
