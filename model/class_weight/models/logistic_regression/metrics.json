@@ -1,0 +1,29 @@
+{
+  "model": "LogisticRegression",
+  "class_weight": "balanced",
+  "random_state": 42,
+  "n_features": 51,
+  "train_shape": [
+    48292,
+    58
+  ],
+  "test_shape": [
+    21795,
+    58
+  ],
+  "accuracy": 0.6586373021335169,
+  "precision": 0.8625474729769208,
+  "recall": 0.6799861814831875,
+  "f1_score": 0.760463618802318,
+  "roc_auc": 0.6962580937064206,
+  "confusion_matrix": [
+    [
+      2545,
+      1882
+    ],
+    [
+      5558,
+      11810
+    ]
+  ]
+}
