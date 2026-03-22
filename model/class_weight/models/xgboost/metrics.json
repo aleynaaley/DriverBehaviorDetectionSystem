@@ -1,0 +1,31 @@
+{
+  "model": "XGBClassifier",
+  "train_strategy": "class_weight_via_sample_weight",
+  "random_state": 42,
+  "n_features": 51,
+  "train_shape": [
+    48292,
+    58
+  ],
+  "test_shape": [
+    21795,
+    58
+  ],
+  "accuracy": 0.7892635925671025,
+  "precision": 0.8918952082949875,
+  "recall": 0.8369990787655458,
+  "f1_score": 0.8635756081622954,
+  "roc_auc": 0.8355425991859134,
+  "confusion_matrix": [
+    [
+      2665,
+      1762
+    ],
+    [
+      2831,
+      14537
+    ]
+  ],
+  "class_0_weight": 2.6386187301934214,
+  "class_1_weight": 0.6168978820163
+}
