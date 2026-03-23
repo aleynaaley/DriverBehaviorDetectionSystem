@@ -118,6 +118,7 @@ model = GRUModel(input_size=X_train.shape[2], hidden_size=HIDDEN_SIZE).to(DEVICE
 criterion = nn.BCEWithLogitsLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=LR)
 
+
 # =========================================================
 # TRAIN
 # =========================================================
