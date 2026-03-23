@@ -9,10 +9,10 @@ import pandas as pd
 # =========================================================
 INPUT_CSV = Path("/Users/aleyaley/Desktop/AB/dataset/data/features_temporal.csv")
 
-OUTPUT_DIR = Path("/Users/aleyaley/Desktop/AB/model/sequence/class_weight/data")
+OUTPUT_DIR = Path("/Users/aleyaley/Desktop/AB/model/sequence/class_weight/data/windows_size60")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-WINDOW_SIZE = 30
+WINDOW_SIZE = 60
 STRIDE = 5
 
 ## bu kısım klasik ml yaparken de böyleydi, aynı kişilerin hem train hem testte olmaması için bu şekilde bölüyoruz.
