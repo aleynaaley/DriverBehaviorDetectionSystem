@@ -1,0 +1,32 @@
+{
+  "model": "1D_CNN",
+  "random_state": 42,
+  "batch_size": 64,
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "train_shape": [
+    9561,
+    51,
+    30
+  ],
+  "test_shape": [
+    4315,
+    51,
+    30
+  ],
+  "accuracy": 0.7453070683661646,
+  "precision": 0.8445095168374817,
+  "recall": 0.8354577056778679,
+  "f1": 0.8399592252803262,
+  "roc_auc": 0.664999315223915,
+  "confusion_matrix": [
+    [
+      332,
+      531
+    ],
+    [
+      568,
+      2884
+    ]
+  ]
+}
