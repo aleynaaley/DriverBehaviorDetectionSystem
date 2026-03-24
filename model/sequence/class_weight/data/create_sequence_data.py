@@ -7,9 +7,9 @@ import pandas as pd
 # =========================================================
 # AYARLAR
 # =========================================================
-INPUT_CSV = Path("/Users/aleyaley/Desktop/AB/dataset/data/features_temporal.csv")
+INPUT_CSV = Path("/Users/aleyaley/Desktop/AB/dataset/data/extra/features_temporal_extra.csv")
 
-OUTPUT_DIR = Path("/Users/aleyaley/Desktop/AB/model/sequence/class_weight/data/windows_size60")
+OUTPUT_DIR = Path("/Users/aleyaley/Desktop/AB/model/sequence/class_weight/data/extra_features")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 WINDOW_SIZE = 60

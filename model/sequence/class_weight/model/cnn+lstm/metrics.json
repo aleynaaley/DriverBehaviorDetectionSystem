@@ -1,0 +1,33 @@
+{
+  "model": "CNN_LSTM",
+  "random_state": 42,
+  "batch_size": 64,
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "lstm_hidden": 128,
+  "train_shape": [
+    9561,
+    30,
+    51
+  ],
+  "test_shape": [
+    4315,
+    30,
+    51
+  ],
+  "accuracy": 0.7657010428736964,
+  "precision": 0.8666266145989787,
+  "recall": 0.8357473928157589,
+  "f1": 0.850906945878189,
+  "roc_auc": 0.7159542086203909,
+  "confusion_matrix": [
+    [
+      419,
+      444
+    ],
+    [
+      567,
+      2885
+    ]
+  ]
+}

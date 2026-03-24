@@ -1,0 +1,33 @@
+{
+  "model": "LSTM",
+  "random_state": 42,
+  "batch_size": 64,
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "hidden_size": 128,
+  "train_shape": [
+    3456,
+    60,
+    51
+  ],
+  "test_shape": [
+    4267,
+    60,
+    51
+  ],
+  "accuracy": 0.7916569018045465,
+  "precision": 0.8968427633635511,
+  "recall": 0.8369311551925321,
+  "f1": 0.865851818318998,
+  "roc_auc": 0.7745209471741515,
+  "confusion_matrix": [
+    [
+      509,
+      330
+    ],
+    [
+      559,
+      2869
+    ]
+  ]
+}
