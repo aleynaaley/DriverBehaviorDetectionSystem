@@ -7,15 +7,15 @@ import pandas as pd
 # =========================================================
 # AYARLAR
 # =========================================================
-INPUT_CSV = Path("/Users/aleyaley/Desktop/AB/dataset/data/extra/features_temporal_extra.csv")
+INPUT_CSV = Path("/Users/aleyaley/Desktop/AB/dataset/data/features_temporal.csv")
 
-OUTPUT_DIR = Path("/Users/aleyaley/Desktop/AB/model/sequence/class_weight/data/extra_features")
+OUTPUT_DIR = Path("/Users/aleyaley/Desktop/AB/model/sequence/class_weight/data")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 WINDOW_SIZE = 60
 STRIDE = 5
 
-## bu kısım klasik ml yaparken de böyleydi, aynı kişilerin hem train hem testte olmaması için bu şekilde bölüyoruz.
+
 TRAIN_PERSON_IDS = [2, 3, 4, 5, 6, 7, 9, 13, 15]
 TEST_PERSON_IDS = [1, 11, 12, 14]
 
