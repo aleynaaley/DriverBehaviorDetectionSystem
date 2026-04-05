@@ -5,3 +5,4 @@
 *.flv
 venv/
 *.npy
+dataset/data/
